@@ -8,9 +8,11 @@ import RotatingLines from 'helpers/Loader';
 import { errorToast } from 'helpers/toasts';
 import MovieDetailsField from './MovieDetailsField';
 import MovieDetailsList from './MovieDetailsList';
+import NoPage from 'components/NoPage';
 
 export default function MovieDetails() {
   const [movie, setMovie] = useState({});
+  const [error, setError] = useState(false);
   const location = useLocation();
   const backLinkLocation = useRef(location.state?.from ?? '/');
   const { movieId } = useParams();
@@ -26,12 +28,15 @@ export default function MovieDetails() {
         setMovie(response.data);
       } catch (error) {
         errorToast();
+        setError(true);
       }
     };
     fetchData();
   }, [movieId]);
 
-  return (
+  return error ? (
+    <NoPage />
+  ) : (
     <div className="md:mt-20 mt-28">
       <Link
         className="bg-blue-900 hover:bg-blue-700 fixed z-100 right-0 top-[86px] 

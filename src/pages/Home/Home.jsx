@@ -4,10 +4,12 @@ import axios from 'axios';
 import HeroSection from './HeroSection';
 import TrendingSection from './TrendingSection';
 import { errorToast } from 'helpers/toasts';
+import NoPage from 'components/NoPage';
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
   const [firstMovie, setFirstMovie] = useState(null);
+  const [error, setError] = useState(false);
 
   const restOfMovies = useMemo(() => movies.slice(1, 15), [movies]);
 
@@ -21,13 +23,16 @@ export default function Home() {
         setMovies(response.data.results);
         setFirstMovie(response.data.results[0]);
       } catch (error) {
+        setError(true);
         errorToast();
       }
     };
     fetchData();
   }, []);
 
-  return (
+  return error ? (
+    <NoPage />
+  ) : (
     <>
       <HeroSection firstMovie={firstMovie} />
       <TrendingSection restOfMovies={restOfMovies} />
