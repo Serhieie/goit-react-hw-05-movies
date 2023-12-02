@@ -4,7 +4,10 @@ export default function CastList({ restOfMovies }) {
   return (
     <ul className="grid sm2:grid-cols-4 md:grid-cols-2 grid-cols-7 w-11/12 mx-auto gap-3">
       {restOfMovies.map(movie => (
-        <li key={movie.id}>
+        <li
+          key={movie.id}
+          className="transition-all duration-300 hover:scale-105"
+        >
           <Link to={`/movies/${movie.id}`}>
             <img
               loading="lazy"

@@ -29,7 +29,7 @@ export default function CastList() {
     <ul className="grid md:grid-cols-3 sm2:grid-cols-4 grid-cols-5 gap-1 justify-center w-10/12 mx-auto">
       {credits.length ? (
         credits.map(credit => (
-          <li key={credit.id} className="flex flex-col justify-between">
+          <li key={credit.id} className="flex flex-col justify-between ">
             {credit.profile_path ? (
               <img
                 loading="lazy"

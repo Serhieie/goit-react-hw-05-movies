@@ -9,7 +9,10 @@ export default function MovieList({ visibleMovies }) {
       {visibleMovies
         .filter(movie => movie.poster_path)
         .map(movie => (
-          <li key={movie.id}>
+          <li
+            key={movie.id}
+            className="transition-all duration-300 hover:scale-105"
+          >
             <Link
               className="flex flex-col gap-1"
               to={`/movies/${movie.id}`}
