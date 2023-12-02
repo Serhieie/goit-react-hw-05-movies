@@ -35,7 +35,7 @@ export default function MovieDetails() {
       <Link
         className="bg-blue-900 hover:bg-blue-700 fixed z-100 right-0 top-[86px] 
          py-0.5 px-3  md:py-1 md:px-2   md:mr-[20px] mr-[90px] 
-         rounded-full flex items-center gap-1 text-xs"
+         rounded-full flex items-center gap-1 text-xs transition-all duration-300"
         to={backLinkLocation.current}
       >
         <IoPlaySkipBackSharp size={18} />
