@@ -1,6 +1,7 @@
 import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './Layout/Layout';
+import NoPage from './NoPage';
 
 //запитання яку функцію Helper найчастіше використовують для обробки іменованного єкспорту?
 const Cast = lazy(() => import('./Cast/Cast'));
@@ -19,6 +20,7 @@ export const App = () => {
           <Route path="cast" element={<Cast />} />
           <Route path="reviews" element={<Reviews />} />
         </Route>
+        <Route path="*" element={<NoPage />} />
       </Route>
     </Routes>
   );

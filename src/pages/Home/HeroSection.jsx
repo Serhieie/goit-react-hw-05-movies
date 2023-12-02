@@ -34,7 +34,7 @@ export default function HeroSection({ firstMovie }) {
                 className="bg-blue-900 transition-all duration-300 hover:bg-blue-700  py-1.5 px-2 block text-center mt-4 w-11/12 mx-auto rounded"
                 to={`/movies/${firstMovie.id}`}
               >
-                Watch Movie
+                More information
               </Link>
             </div>
           </div>

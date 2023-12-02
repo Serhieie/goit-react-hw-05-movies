@@ -22,6 +22,8 @@ module.exports = {
       fontFamily: {
         h1Font: 'Marcellus, sans-serif',
         searchP: 'Lemon, serif',
+        errorFont: 'Bebas, sans-serif',
+        pixel: 'Pixelify Sans, sans-serif',
       },
       boxShadow: {
         shadowIn: 'inset 0 0 8px 6px rgb(0 0 0 / 0.05)',
