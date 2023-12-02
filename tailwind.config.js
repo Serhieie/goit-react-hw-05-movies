@@ -11,7 +11,7 @@ module.exports = {
         hoverColor: '#303f9f',
       },
       screens: {
-        lg: { max: '1023px' },
+        lg: { min: '767px', max: '1023px' },
         md: { max: '767px' },
         sm: { max: '519px' },
         ssm: { max: '375px' },
@@ -20,11 +20,11 @@ module.exports = {
         extraLargeScreen: { min: '1540px' },
       },
       fontFamily: {
-        bigFont: 'Bebas Neue, sans-serif',
+        h1Font: 'Marcellus, sans-serif',
+        searchP: 'Lemon, serif',
       },
-      lineHeight: {
-        'extra-tight': '0.75',
-        12: '3rem',
+      boxShadow: {
+        shadowIn: 'inset 0 0 8px 6px rgb(0 0 0 / 0.05)',
       },
     },
   },
