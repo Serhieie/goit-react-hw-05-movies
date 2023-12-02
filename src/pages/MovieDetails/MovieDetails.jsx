@@ -16,6 +16,7 @@ export default function MovieDetails() {
   const { movieId } = useParams();
 
   useEffect(() => {
+    if (!movieId) return;
     const fetchData = async () => {
       try {
         const response = await axios.get(
