@@ -15,7 +15,7 @@ export default function HeroSection({ firstMovie }) {
           ></div>
           <div className="md:items-start md:px-[5%] lg:w-6/12 lg:px-2 w-4/12 py-2 px-10 bor rounded-tl-xl bg-transparent relative flex  items-end">
             <div>
-              <h1 className=" lg:left-[110%] lg:-top-[40%] lg:text-8xl lg:max-w-[600px] md:text-5xl md:static md:max-w-[320px] md:mb-1 absolute -left-40 -top-2 w-[400px] text-start text-8xl text-white  font-h1Font font-normal leading-20 select-none">
+              <h1 className=" lg:left-[110%] lg:-top-[40%] lg:text-8xl lg:max-w-[600px] md:text-5xl md:static md:max-w-[320px] md:mb-1 absolute -right-2 -top-2 w-[500px] text-start text-8xl text-white  font-h1Font font-normal leading-20 select-none">
                 {firstMovie.title ?? firstMovie.name}
               </h1>
               <div className="flex gap-10">

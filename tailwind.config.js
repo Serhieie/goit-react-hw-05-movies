@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         headerBgColor: '#3f51b5',
         hoverColor: '#303f9f',
+        bgColorOfMainTitle: 'hsla(226, 87%, 66%, 0.2)',
       },
       screens: {
         lg: { min: '767px', max: '1023px' },

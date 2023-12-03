@@ -14,7 +14,7 @@ body {
 }
 
 .hover:hover > span {
-  box-shadow: 0px 0px 12px 8px hsla(226, 85%, 63%, 0.52);
+  box-shadow: 0px 0px 12px 8px hsla(226, 87%, 66%, 0.2);
   transform: scaleX(95%);
   transition: all 400ms linear;
   color: rgb(36, 78, 120);
