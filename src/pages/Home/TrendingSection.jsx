@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function TrandingSection({ restOfMovies }) {
   return (
-    <section className="bg-gradient-to-t via-blue-950 from-black to-black">
+    <section className="bg-gradient-to-t via-blue-950 from-black to-black mt-6">
       <h2
         className=" md:text-sm  md:mb-0 md:after:left-[36%] sm2:text-xl  sm2:after:left-[32%] sm2:after:top-[26px] 
           md:after:right-[30%] md:after:top-[24px] ml-[4%] mb-2 text-3xl font-bold text-blue-200 after:bottom-4 py-4 relative 

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export default function HeroSection({ firstMovie }) {
+  console.log(firstMovie);
   return (
     <>
       {firstMovie && (
@@ -13,11 +14,15 @@ export default function HeroSection({ firstMovie }) {
               backgroundImage: `url('https://image.tmdb.org/t/p/original/${firstMovie.backdrop_path}')`,
             }}
           ></div>
-          <div className="md:items-start md:px-[5%] lg:w-6/12 lg:px-2 w-4/12 py-2 px-10 bor rounded-tl-xl bg-transparent relative flex  items-end">
+          <div className="md:items-start md:px-[5%] sm:w-auto sm2:w-auto lg:w-6/12 lg:px-2 w-4/12 py-2 px-10 bor rounded-tl-xl bg-transparent flex  items-end">
             <div>
-              <h1 className=" lg:left-[110%] lg:-top-[40%] lg:text-8xl lg:max-w-[600px] md:text-5xl md:static md:max-w-[320px] md:mb-1 absolute -right-2 -top-2 w-[500px] text-start text-8xl text-white  font-h1Font font-normal leading-20 select-none">
+              <h1
+                className=" lg:text-5xl lg:absolute lg:right-8 lg:max-w-[560px] md:text-5xl  md:max-w-[420px] md:mb-1  max-w-[500px] extraLargeScreen:text-6xl  text-4xl text-white font-h1Font font-normal leading-20 select-none text-center mb-8"
+                style={{ textShadow: '0 0 5px #172554' }}
+              >
                 {firstMovie.title ?? firstMovie.name}
               </h1>
+
               <div className="flex gap-10">
                 <div className="flex items-center gap-1 pb-2">
                   <p className="text-xs">{firstMovie.vote_average}</p>
